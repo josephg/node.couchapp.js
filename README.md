@@ -4,29 +4,29 @@ Install node.
 
 Install npm.
 
-<pre>
+```
 $ git clone repo
 $ cd node.couchapp.js
 $ npm link .
-</pre>
+```
 
-<pre>
+```
 $ couchapp help
 couchapp -- utility for creating couchapps
 
 Usage:
-  couchapp &lt;command> app.js http://localhost:5984/dbname
+  couchapp <command> app.js http://localhost:5984/dbname
 
 Commands:
   push : Push app once to server.
   sync : Push app then watch local files for changes.
-</pre>
+```
 
 If you want coffeescript support, `npm install -g coffee-script`
 
 app.js example:
 
-<pre>
+```javascript
   var couchapp = require('couchapp')
     , path = require('path');
 
@@ -74,4 +74,4 @@ app.js example:
   }
 
   couchapp.loadAttachments(ddoc, path.join(__dirname, '_attachments'));
-</pre>
+```
