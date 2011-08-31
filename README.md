@@ -22,6 +22,8 @@ Commands:
   sync : Push app then watch local files for changes.
 </pre>
 
+If you want coffeescript support, `npm install -g coffee-script`
+
 app.js example:
 
 <pre>

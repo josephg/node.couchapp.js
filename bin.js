@@ -6,6 +6,10 @@ var couchapp = require('./main.js')
   , fs = require('fs')
   ;
 
+try {
+  require('coffee-script');
+} catch (e) {}
+
 function abspath (pathname) {
   if (pathname[0] === '/') return pathname
   return path.join(process.env.PWD, path.normalize(pathname));
